@@ -1,0 +1,4 @@
+Kiểm thử hệ thống trong hai terminal riêng biệt
+Terminal 1: Chạy receiver (server nhận dữ liệu)
+Terminal 2: Chạy sender (server gửi dữ liệu)
+Kiểm tra kết quả huấn luyện và đánh giá mô hình
