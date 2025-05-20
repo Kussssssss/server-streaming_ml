@@ -10,7 +10,7 @@ class Dataset:
         Initialize dataset loader
         
         Args:
-            dataset_type (str): Type of dataset to load ("iris" or "california")
+            dataset_type (str): Type of dataset to load "iris"
         """
         self.dataset_type = dataset_type
         self.data = None
@@ -22,11 +22,6 @@ class Dataset:
         """Load the specified dataset"""
         if self.dataset_type == "iris":
             df = pd.read_csv("../data/iris.csv")
-            self.features = df.iloc[:, :-1].values
-            self.labels = df.iloc[:, -1].values
-            self.feature_names = df.columns[:-1].tolist()
-        else:  # california housing
-            df = pd.read_csv("../data/california_housing.csv")
             self.features = df.iloc[:, :-1].values
             self.labels = df.iloc[:, -1].values
             self.feature_names = df.columns[:-1].tolist()
