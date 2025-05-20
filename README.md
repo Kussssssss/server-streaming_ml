@@ -1,4 +1,4 @@
-# ML Streaming Project
+# ML Streaming Project using Spark
 
 This project implements a distributed machine learning system with two main components:
 1. A data sender server that streams data over TCP
