@@ -7,7 +7,7 @@ This project implements a distributed machine learning system with two main comp
 ## Features
 
 - Streaming data processing with Apache Spark
-- Support for Iris and California Housing datasets
+- Support for Iris datasets
 - Classification models: SVM and Logistic Regression
 - Real-time model training and evaluation metrics
 - Configurable batch size and streaming intervals
@@ -79,20 +79,12 @@ python stream.py --dataset iris --batch-size 10 --sleep 1
 ```
 
 Options:
-- `--dataset` or `-d`: Dataset type (iris or california), default: iris
+- `--dataset` or `-d`: Dataset type (iris)
 - `--batch-size` or `-b`: Batch size, default: 10
 - `--endless` or `-e`: Enable endless stream, default: False
 - `--sleep` or `-s`: Streaming interval in seconds, default: 1
 - `--host`: TCP host, default: localhost
 - `--port` or `-p`: TCP port, default: 6100
-
-## How It Works
-
-1. The sender reads data from the specified dataset (Iris or California Housing)
-2. Data is batched and streamed over TCP socket
-3. The receiver uses Spark Streaming to process incoming data
-4. The specified ML model (SVM or Logistic Regression) is trained on each batch
-5. Training metrics are calculated and displayed in real-time
 
 ## License
 
